@@ -1,0 +1,149 @@
+html, body
+{
+    background-image: url("wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: "Lucida Console", Monaco, monospace
+}
+
+h1
+{
+
+	font-size: 30px;
+	font-weight: bold;
+    text-align: center;
+    border-bottom: 10px solid #444444;
+}
+
+h2
+{
+	font-size: 20;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3
+{
+	font-size: 20;
+	font-weight: bold;
+	text-align: center;
+}
+
+a, button
+{
+	margin: 10px;
+	border: none;
+	background-color: #FFFFFF;
+	padding: 20px 50px;
+	color: #272727;
+	font-size: 15px;
+}
+
+a:hover, button:hover
+{
+	background-color: #444444;
+}
+
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+}
+
+td
+{
+	padding-left: 5px;
+	padding-right: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+input
+{
+    width: 300px;
+    height: 25px;
+	display: inline-block;
+  	float: left;
+	border: 3px solid #444444;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+label
+{
+	display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+	margin-top: 10px;
+    text-align: right;
+	font-weight: bold;
+}
+
+img
+{
+	border: 5px solid #444444;
+	height: 500px;
+	width: 500px;
+	
+}
+
+.Exercise3
+{
+	background-image: url(wallpaper1.jpg);
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-weight: bold;
+}
+
+h1.profile
+{
+	background-color: #999999;
+}
+
+.profileBody
+{
+	background-color: #999999;
+	color: #292929;
+	
+}
+
+.links
+{
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.links:hover
+{
+	background-color: #999999;
+}
+
+.editing
+{
+	font-size: 20px;
+}
+
+#values
+{
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 5%;
+}
+
+#editText
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	border: 1px solid rgb(0,0,0);
+	background-color: #444444;
+}
+
+#Manipulation
+{
+	width: 100%;
+}

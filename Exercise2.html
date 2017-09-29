@@ -1,0 +1,47 @@
+<!--
+    Author: Brandon Lammey
+    Date Last Updated: 24 September 2017
+    File Name: Exercise2.html
+    Description: Slideshow of pictures that user can scroll through
+-->
+<html>
+    <head>
+        <!--includes: javascript file and CSS file-->
+        <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" href="myStyle.css">
+        
+        <title>Slideshow</title>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <h1> Slideshow </h1>
+            </tr>
+            <tr>
+                <td>
+                    <!--shows the previous picture-->
+                    <button  onclick="prevPic()">PREV</button>
+                </td>
+                <td>
+                    <!--displaying the current image at which the user is looking-->
+                    <img id="initialImage" src="ex2_img/img1.jpg">
+                </td>
+                <td>
+                    <!--shows the next picture-->
+                    <button  onclick="nextPic()">NEXT</button>
+                </td>
+            </tr>
+        </table>
+        <br/><br/>
+        <!--Return to Exercises-->
+        <table>
+                <tr>
+                        <td>
+                                <a href="index.html">Home</a>
+                        </tr>
+                </td>
+        </table>
+    </body>
+
+</html>
