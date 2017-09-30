@@ -1,21 +1,18 @@
-
 <?php
+	echo "<table border=\"5\">";
+	
+	//multiply elements and print out each row
+	for($i = 1; $i<=100; $i++)
+	{
+		//print each column
+		echo('<tr>');
+		for($j =1; $j<=100; $j++)
+		{
+			echo('<td>'. $i*$j. '</td>');
+		}
+		echo'</tr>';
+	}
 
-//mutiply elements 
-function multiple($x, $y)
-{
-  $z = $x * $y;
-  return $z;
-}
+	echo "</table>";
 
-//run through all values 1-100
-for ($i = 1; $i <= 100; $i++)
-{
-  echo "<h5>";
-  for ($j = 1; $j <= 100; $j++)
-  {
-    echo " " . multiple($i, $j) . " ";
-  }
-  echo "</h5>";
-}
 ?>
