@@ -8,7 +8,7 @@
 <html>
     <head>
         <!--includes: javascript file and CSS file-->
-        
+        <link rel="stylesheet" href="myStyle.css">
 
         <title> 
                 Multiplication Table
@@ -16,10 +16,30 @@
     </head>
 
     <body>
-        <?php include 'multiplicationTable.php';?>
-        <form action="multiplicationTable.php" method="post">
-	    <input type="submit"/>
-	    </form>
+            <table>
+                <tr>
+                    <h1> Multiplication Table </h1>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br/>
+                         <?php include 'multiplicationTable.php';?>
+                        <form action="multiplicationTable.php" method="post">
+                        <input type="submit" value= "Open Multiplication Table"/>
+                        </form>
+            </td>
+        </tr>
+
+                <tr>
+                        <td>
+                            <br/>
+                            
+                            <a href="index.html">HOME</a>
+                        </td>
+                    </tr>
+
+            </table>
     </body>
 
 </html>
