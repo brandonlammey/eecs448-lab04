@@ -1,19 +1,19 @@
 <?php
 //correct solutions
 $q1 = $_POST["q1"];
-$a1 = "b";
+$a1 = "b) The Rack";
 
 $q2 = $_POST["q2"];
-$a2 = "a";
+$a2 = "a) A Judas Chair";
 
 $q3 = $_POST["q3"];
-$a3 = "c";
+$a3 = "c) A Metal Bull";
 
 $q4 = $_POST["q4"];
-$a4 = "d";
+$a4 = "d) The Scavenger's Daughter";
 
 $q5 = $_POST["q5"];
-$a5 = "d";
+$a5 = "d) The Breaking Wheel";
 
 //Score variables
 $score = 0;
