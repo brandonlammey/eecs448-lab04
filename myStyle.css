@@ -50,7 +50,11 @@ table
 	margin-right: auto;
 	width: 50%;
 	text-align: center;
+
+	border: 1px solid black;
+	border-collapse: collapse;
 }
+
 
 td
 {
@@ -62,19 +66,38 @@ td
 
 input
 {
-    width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+
+    width: 150px;
     height: 25px;
-	display: inline-block;
-  	float: left;
+
 	border: 3px solid #444444;
-	margin-top: 5px;
-	margin-left: 10px;
+
 }
+
+#radio
+{
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+
+    width: 50px;
+    height: 25px;
+
+	border: 5px solid #444444;
+
+}
+
+
 
 label
 {
 	display: inline-block;
-    float: left;
+    
     clear: left;
     width: 250px;
 	margin-top: 10px;
@@ -146,4 +169,55 @@ h1.profile
 #Manipulation
 {
 	width: 100%;
+	border: none;
+}
+
+#customerFrontEndTable
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	text-align: center;
+
+	border: none;
+
+}
+
+#general
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	text-align: center;
+
+	border: none;
+}
+
+#Receipt
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+form
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#shipping
+{
+	display: inline-block;
+
+    clear: right;
+    width: 175px;
+	margin-top: 10px;
+	text-align: left;
+	font-weight: bold;
+
 }
