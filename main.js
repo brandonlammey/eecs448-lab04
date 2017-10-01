@@ -156,3 +156,71 @@ function manipulateText()
         preview.style.backgroundColor = "rgb(" + redBack + "," + greenBack + "," + blueBack + ")";
     }
 }
+
+/**
+*	Public method that takes no arguments.
+*	Details: Checks user input to make sure username and password are valid
+*/
+function validateLogin()
+{
+    let name = document.forms["login"]["username"].value;
+
+    let password = document.forms["login"]["password"].value;
+
+    var
+    
+    //retrieved from: https://stackoverflow.com/a/46181
+    //author: rnevius
+    let re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let validName = re.test(name);
+    //end retrieved portion
+
+    if(name == null || name == "")
+    {
+        alert("Username is invalid! Field Left Blank!");
+        return false;
+    }
+    else if(!validName)
+    {
+        alert("Username is invalid! Not valid format!");
+    }
+    else if(password == null || password == "")
+    {
+        alert("Password is invalid! Field Left Blank!");
+        return false;
+    }
+}
+  
+  /**
+*	Public method that takes no arguments.
+*	Details: Checks for user input (No blank forms)
+*/
+function validateForm()
+{
+    let q1 = document.forms["store"]["quantity1"].value;
+    let q2 = document.forms["store"]["quantity2"].value;
+    let q3 = document.forms["store"]["quantity3"].value;
+    let shipping = document.forms["store"]["shipping"].value;
+
+    
+    if(q1 == null || q1 == "" || parseInt(q1) < 0)
+    {
+      alert("Boots quantity invalid! Please unter a quantity greater than or equal to 0.");
+      return false;
+    }
+    else if(q2 == null || q2 == "" || parseInt(q2) < 0)
+    {
+      alert("Kimono quantity invalid! Please unter a quantity greater than or equal to 0.");
+      return false;
+    }
+    else if(q3 == null || q3 == "" || parseInt(q3) < 0)
+    {
+      alert("Card quantity invalid! Please unter a quantity greater than or equal to 0.");
+      return false;
+    }
+    else if(shipping == null || shipping == "")
+    {
+      alert("PLEASE CHOOSE SHIPPING OPTION");
+      return false;
+    }
+}
