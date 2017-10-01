@@ -46,31 +46,20 @@ $total = $q1Total + $q2Total + $q3Total + $shipTotal;
 
 echo "<h3>Your Username: $username</h3>";
 echo "<h3>Your Password: $password</h3>";
-//echo "<table id='Receipt'>";
-
-//echo "<tr><th><h1>Your Receipt</th></tr>";
-//echo "<tr><th>Item</th><th>Quantity</th><th>Cost Per</th><th>Subtotal</th></tr>";
-//echo "<tr><td>Black Panther Velvet Boots</td><td>$q1</td><td>$250</td><td>$$q1Total</td></tr>";
-//echo "<tr><td>Murasaki Violet Silk Kimono</td><td>$q2</td><td>$500</td><td>$$q2Total</td></tr>";
-//echo "<tr><td>Number 106: Giant Hand</td><td>$q3</td><td>$10000</td><td>$$q3Total</td></tr>";
-//echo "<tr><td>Shipping Option</td><td>$$shipTotal</td></tr>";
-//echo "<tr><td>Total</td><td>$total</td></tr>";
-
-//echo "</table>";
 
 echo "<table class='tftable' border='1'>";
 
-echo"<tr><th colspan='4'>Reciept</th></tr>";
+echo"<tr><th colspan='4'><h3>Reciept</h3></th></tr>";
 echo"<tr><td> </td><td>Quantity</td><td>Cost Per Item</td><td>Total</td>";
 
-echo"<tr><td>Black Panther Velvet Boots</td><td>$q1</td><td>$250</td><td>$q1Total</td>";
-echo"<tr><td>Murasaki Violet Silk Kimono</td><td>$q2</td><td>$500</td><td>$q2Total</td>";
-echo"<tr><td>Number 106: Giant Hand</td><td>$q3</td><td>$10000</td><td>$q3Total</td>";
+echo"<tr><td>Black Panther Velvet Boots</td><td bgcolor='#5DB8B8'>$q1</td><td bgcolor='#5DB8B8'>$250</td><td bgcolor='#5DB8B8'>$q1Total</td>";
+echo"<tr><td>Murasaki Violet Silk Kimono</td><td bgcolor='#5DB8B8'>$q2</td><td bgcolor='#5DB8B8'>$500</td><td bgcolor='#5DB8B8'>$q2Total</td>";
+echo"<tr><td>Number 106: Giant Hand</td><td bgcolor='#5DB8B8'>$q3</td><td bgcolor='#5DB8B8'>$10000</td><td bgcolor='#5DB8B8'>$q3Total</td>";
 
 echo"<tr><td>Shipping</td><td colspan='2'>$shipping</td><td>$$shipTotal</td>";
 echo"<tr><td colspan='3'>Total Cost</td><td>$total</td>";
 
-echo"</table>
+echo"</table>"
 
 ?>
 
