@@ -89,5 +89,7 @@ else
 //Output Score
 $percentage = ($score/$total)*100;
 echo "<h2> You got $score out of $total correct</h2>";
-echo "<h2>Your Score: $percentage%</h2>";
+echo "<h2>Your Score: $percentage%</h2
+
+echo("<a href='index.html'>HOME</a>");
 ?>
