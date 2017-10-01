@@ -36,6 +36,15 @@ echo "<table border=\"5\">";
 
 		}
 		echo'</tr>';
+	  	echo('<table>');
+
+echo('</br>');
+echo('</br>');
+	echo"<a href='index.html'>HOME</a>";
+echo('</br>');
+echo('</br>');
+
+ 	echo('</table>');
   }
   
 ?>
