@@ -7,6 +7,8 @@
     Description: Prints out a reciept for customer
 */
 
+echo"<link rel='stylesheet' type='text/css' href='myStyle.css' />";
+
 $username = $_POST["username"];
 $password = $_POST["password"];
 
@@ -44,23 +46,30 @@ $total = $q1Total + $q2Total + $q3Total + $shipTotal;
 
 echo "<h3>Your Username: $username</h3>";
 echo "<h3>Your Password: $password</h3>";
-echo "<table id='Receipt'>";
+//echo "<table id='Receipt'>";
 
-echo "<tr><th><h1>Your Receipt</th></tr>";
-echo "<tr><th>Item</th><th>Quantity</th><th>Cost Per</th><th>Subtotal</th></tr>";
-echo "<tr><td>Black Panther Velvet Boots</td><td>$q1</td><td>$250</td><td>$$q1Total</td></tr>";
-echo "<tr><td>Murasaki Violet Silk Kimono</td><td>$q2</td><td>$500</td><td>$$q2Total</td></tr>";
-echo "<tr><td>Number 106: Giant Hand</td><td>$q3</td><td>$10000</td><td>$$q3Total</td></tr>";
-echo "<tr><td>Shipping Option</td><td>$$shipTotal</td></tr>";
-echo "<tr><td>Total</td><td>$total</td></tr>";
+//echo "<tr><th><h1>Your Receipt</th></tr>";
+//echo "<tr><th>Item</th><th>Quantity</th><th>Cost Per</th><th>Subtotal</th></tr>";
+//echo "<tr><td>Black Panther Velvet Boots</td><td>$q1</td><td>$250</td><td>$$q1Total</td></tr>";
+//echo "<tr><td>Murasaki Violet Silk Kimono</td><td>$q2</td><td>$500</td><td>$$q2Total</td></tr>";
+//echo "<tr><td>Number 106: Giant Hand</td><td>$q3</td><td>$10000</td><td>$$q3Total</td></tr>";
+//echo "<tr><td>Shipping Option</td><td>$$shipTotal</td></tr>";
+//echo "<tr><td>Total</td><td>$total</td></tr>";
 
-echo "</table>";
+//echo "</table>";
 
 echo "<table class='tftable' border='1'>";
-echo"<tr><th colspan='4'>Header</th></tr>";
-echo"<tr><td>Row:1 Cell:1</td><td>Row:1 Cell:2</td><td>Row:1 Cell:3</td><td>Row:1 Cell:4</td><td>Row:1 Cell:5</td></tr>";
-echo"<tr><td>Row:2 Cell:1</td><td>Row:2 Cell:2</td><td>Row:2 Cell:3</td><td>Row:2 Cell:4</td><td>Row:2 Cell:5</td></tr>";
-echo"<tr><td>Row:3 Cell:1</td><td>Row:3 Cell:2</td><td>Row:3 Cell:3</td><td>Row:3 Cell:4</td><td>Row:3 Cell:5</td></tr>";
+
+echo"<tr><th colspan='4'>Reciept</th></tr>";
+echo"<tr><td> </td><td>Quantity</td><td>Cost Per Item</td><td>Total</td>";
+
+echo"<tr><td>Black Panther Velvet Boots</td><td>$q1</td><td>$250</td><td>$q1Total</td>";
+echo"<tr><td>Murasaki Violet Silk Kimono</td><td>$q2</td><td>$500</td><td>$q2Total</td>";
+echo"<tr><td>Number 106: Giant Hand</td><td>$q3</td><td>$10000</td><td>$q3Total</td>";
+
+echo"<tr><td>Shipping</td><td colspan='2'>$shipping</td><td>$$shipTotal</td>";
+echo"<tr><td colspan='3'>Total Cost</td><td>$total</td>";
+
 echo"</table>
 
 ?>
