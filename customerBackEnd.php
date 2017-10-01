@@ -59,7 +59,17 @@ echo"<tr><td>Number 106: Giant Hand</td><td bgcolor='#5DB8B8'>$q3</td><td bgcolo
 echo"<tr><td>Shipping</td><td colspan='2' bgcolor='#5DB8B8'>$shipping</td><td bgcolor='#5DB8B8'>$$shipTotal</td>";
 echo"<tr><td colspan='3'>Total Cost</td><td>$total</td>";
 
-echo"</table>"
+echo"</table>";
+
+echo('<table>');
+
+    echo('</br>');
+    echo('</br>');
+      echo"<a href='index.html'>HOME</a>";
+    echo('</br>');
+    echo('</br>');
+
+echo('</table>');
 
 ?>
 
