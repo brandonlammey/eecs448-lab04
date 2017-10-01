@@ -56,22 +56,18 @@ echo "<tr><td>Total</td><td>$total</td></tr>";
 
 echo "</table>";
 
-?>
-
-
-
-<style type="text/css">
-.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
-.tftable th {font-size:12px;background-color:#b8b8b8;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:left;}
-.tftable tr {background-color:#cdcdcd;}
-.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
-</style>
-
 echo "<table class='tftable' border='1'>";
 echo"<tr><th colspan='4'>Header</th></tr>";
-
 echo"<tr><td>Row:1 Cell:1</td><td>Row:1 Cell:2</td><td>Row:1 Cell:3</td><td>Row:1 Cell:4</td><td>Row:1 Cell:5</td></tr>";
 echo"<tr><td>Row:2 Cell:1</td><td>Row:2 Cell:2</td><td>Row:2 Cell:3</td><td>Row:2 Cell:4</td><td>Row:2 Cell:5</td></tr>";
 echo"<tr><td>Row:3 Cell:1</td><td>Row:3 Cell:2</td><td>Row:3 Cell:3</td><td>Row:3 Cell:4</td><td>Row:3 Cell:5</td></tr>";
 echo"</table>
+
+?>
+
+
+
+
+
+
 
