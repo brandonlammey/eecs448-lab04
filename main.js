@@ -161,6 +161,7 @@ function manipulateText()
 *	Public method that takes no arguments.
 *	Details: Checks user input to make sure username and password are valid
 */
+/*
 function validateLogin()
 {
     let name = document.forms["login"]["username"].value;
@@ -190,6 +191,7 @@ function validateLogin()
         return false;
     }
 }
+*/
   
   /**
 *	Public method that takes no arguments.
