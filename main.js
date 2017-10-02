@@ -161,27 +161,20 @@ function manipulateText()
 *	Public method that takes no arguments.
 *	Details: Checks user input to make sure username and password are valid
 */
-/*
+
 function validateLogin()
 {
     let name = document.forms["login"]["username"].value;
 
     let password = document.forms["login"]["password"].value;
 
-    var
-    
-    //retrieved from: https://stackoverflow.com/a/46181
-    //author: rnevius
-    let re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    let validName = re.test(name);
-    //end retrieved portion
 
     if(name == null || name == "")
     {
         alert("Username is invalid! Field Left Blank!");
         return false;
     }
-    else if(!validName)
+    else if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(name))
     {
         alert("Username is invalid! Not valid format!");
     }
@@ -191,7 +184,7 @@ function validateLogin()
         return false;
     }
 }
-*/
+
   
   /**
 *	Public method that takes no arguments.

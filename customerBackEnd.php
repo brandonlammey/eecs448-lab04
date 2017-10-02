@@ -52,12 +52,12 @@ echo "<table class='tftable' border='1'>";
 echo"<tr><th colspan='4'><h3>Reciept</h3></th></tr>";
 echo"<tr><td> </td><td>Quantity</td><td>Cost Per Item</td><td>Total</td>";
 
-echo"<tr><td>Black Panther Velvet Boots</td><td bgcolor='#5DB8B8'>$q1</td><td bgcolor='#5DB8B8'>$250</td><td bgcolor='#5DB8B8'>$q1Total</td>";
-echo"<tr><td>Murasaki Violet Silk Kimono</td><td bgcolor='#5DB8B8'>$q2</td><td bgcolor='#5DB8B8'>$500</td><td bgcolor='#5DB8B8'>$q2Total</td>";
-echo"<tr><td>Number 106: Giant Hand</td><td bgcolor='#5DB8B8'>$q3</td><td bgcolor='#5DB8B8'>$10000</td><td bgcolor='#5DB8B8'>$q3Total</td>";
+echo"<tr><td>Black Panther Velvet Boots</td><td bgcolor='#5DB8B8'>$q1</td><td bgcolor='#5DB8B8'>$250</td><td bgcolor='#5DB8B8'>$$q1Total</td>";
+echo"<tr><td>Murasaki Violet Silk Kimono</td><td bgcolor='#5DB8B8'>$q2</td><td bgcolor='#5DB8B8'>$500</td><td bgcolor='#5DB8B8'>$$q2Total</td>";
+echo"<tr><td>Number 106: Giant Hand</td><td bgcolor='#5DB8B8'>$q3</td><td bgcolor='#5DB8B8'>$10000</td><td bgcolor='#5DB8B8'>$$q3Total</td>";
 
 echo"<tr><td>Shipping</td><td colspan='2' bgcolor='#5DB8B8'>$shipping</td><td bgcolor='#5DB8B8'>$$shipTotal</td>";
-echo"<tr><td colspan='3'>Total Cost</td><td>$total</td>";
+echo"<tr><td colspan='3'>Total Cost</td><td>$$total</td>";
 
 echo"</table>";
 
