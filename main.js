@@ -157,28 +157,23 @@ function manipulateText()
     }
 }
 
-/**
-*	Public method that takes no arguments.
-*	Details: C
-*/
-
-  
   /**
 *	Public method that takes no arguments.
-*	Details: Check user input
-*   Checks user input to make sure username and password are valid
-*   Checks for user input (No blank forms)
+*	Details: 
+*	-Checks for user input (No blank forms)
+*	-Checks user input to make sure username and password are valid
 */
 function validateForm()
 {
+
     let name = document.forms["store"]["username"].value;
     let password = document.forms["store"]["password"].value;
+
 
     let q1 = document.forms["store"]["quantity1"].value;
     let q2 = document.forms["store"]["quantity2"].value;
     let q3 = document.forms["store"]["quantity3"].value;
     let shipping = document.forms["store"]["shipping"].value;
-
 
     if(name == null || name == "")
     {
@@ -188,15 +183,14 @@ function validateForm()
     else if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(name))
     {
         alert("Username is invalid! Not valid format!");
-        return false;
+	    return false;
     }
     else if(password == null || password == "")
     {
         alert("Password is invalid! Field Left Blank!");
         return false;
     }
-    
-    if(q1 == null || q1 == "" || parseInt(q1) < 0)
+	else if(q1 == null || q1 == "" || parseInt(q1) < 0)
     {
       alert("Boots quantity invalid! Please unter a quantity greater than or equal to 0.");
       return false;
@@ -216,4 +210,9 @@ function validateForm()
       alert("PLEASE CHOOSE SHIPPING OPTION");
       return false;
     }
+    else
+    {
+    return true;
+    }
 }
+
