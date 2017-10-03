@@ -159,14 +159,25 @@ function manipulateText()
 
 /**
 *	Public method that takes no arguments.
-*	Details: Checks user input to make sure username and password are valid
+*	Details: C
 */
 
-function validateLogin()
+  
+  /**
+*	Public method that takes no arguments.
+*	Details: Check user input
+*   Checks user input to make sure username and password are valid
+*   Checks for user input (No blank forms)
+*/
+function validateForm()
 {
-    let name = document.forms["login"]["username"].value;
+    let name = document.forms["store"]["username"].value;
+    let password = document.forms["store"]["password"].value;
 
-    let password = document.forms["login"]["password"].value;
+    let q1 = document.forms["store"]["quantity1"].value;
+    let q2 = document.forms["store"]["quantity2"].value;
+    let q3 = document.forms["store"]["quantity3"].value;
+    let shipping = document.forms["store"]["shipping"].value;
 
 
     if(name == null || name == "")
@@ -177,26 +188,13 @@ function validateLogin()
     else if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(name))
     {
         alert("Username is invalid! Not valid format!");
+        return false;
     }
     else if(password == null || password == "")
     {
         alert("Password is invalid! Field Left Blank!");
         return false;
     }
-}
-
-  
-  /**
-*	Public method that takes no arguments.
-*	Details: Checks for user input (No blank forms)
-*/
-function validateForm()
-{
-    let q1 = document.forms["store"]["quantity1"].value;
-    let q2 = document.forms["store"]["quantity2"].value;
-    let q3 = document.forms["store"]["quantity3"].value;
-    let shipping = document.forms["store"]["shipping"].value;
-
     
     if(q1 == null || q1 == "" || parseInt(q1) < 0)
     {
