@@ -49,7 +49,7 @@ function nextPic()
 
         if(document.getElementById("initialImage").src.charAt(i) == 1)
         {
-            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img5.jpg";
+            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img2.jpg";
             break;
         }
         else if(document.getElementById("initialImage").src.charAt(i) == 2)
@@ -64,12 +64,12 @@ function nextPic()
         }
         else if(document.getElementById("initialImage").src.charAt(i) == 4)
         {
-            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img1.jpg";
+            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img5.jpg";
             break;
         }
         else if(document.getElementById("initialImage").src.charAt(i) == 5)
         {
-            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img2.jpg";
+            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img1.jpg";
             break;
         }
     }
@@ -88,17 +88,17 @@ function prevPic()
     {
         if(document.getElementById("initialImage").src.charAt(i) == 1)
         {
-            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img1.jpg";
+            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img5.jpg";
             break;
         }
         else if(document.getElementById("initialImage").src.charAt(i) == 2)
         {
-            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img2.jpg";
+            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img1.jpg";
             break;
         }
         else if(document.getElementById("initialImage").src.charAt(i) == 3)
         {
-            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img5.jpg";
+            document.getElementById("initialImage").src = "http://i237.photobucket.com/albums/ff138/brandonlammey/448%20Project/img2.jpg";
             break;
         }
         else if(document.getElementById("initialImage").src.charAt(i) == 4)
